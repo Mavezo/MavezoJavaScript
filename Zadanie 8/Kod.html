@@ -6,23 +6,21 @@
 <textarea id="obraz" name="obraz" rows="30" cols="52">
 <html>
 <head>
-<style>
-
-</style>
+    <title>Zadanie 8.</title>
 </head>
 <body>
 <div style="color:red;font-size:50px;">
 <script language="JavaScript">
-var D1=parseFloat(prompt("date1=",""));
-var D2=parseFloat(prompt("date2=",""));
+var D1_Tse=parseFloat(prompt("date1=",""));
+var D2_Tse=parseFloat(prompt("date2=",""));
 var second_count;
-second_count = (D2 - D1) * 24 * 60 * 60;
+second_count = (D2_Tse - D1_Tse) * 24 * 60 * 60;
 if (second_count < 0) {
     second_count = -second_count;
 }
-document.write("Date1 = "+D1+" <br>");
-document.write("Date2 = "+D2+"<br>");
-document.write("Ile second mędzy "+D1+" a "+D2+" = "+second_count+" s<br>");
+document.write("Date1 = "+D1_Tse+" <br>");
+document.write("Date2 = "+D2_Tse+"<br>");
+document.write("Ile second mędzy "+D1_Tse+" a "+D2_Tse+" = "+second_count+" s<br>");
 </script>
 </div>
 </body>
