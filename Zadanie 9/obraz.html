@@ -10,7 +10,7 @@ var H2_Tse = parseFloat(prompt("Hour 1=",""));
 var D2_Tse = parseFloat(prompt("Day 2=",""));
 var H1_Tse = parseFloat(prompt("Hour 2=",""));
 var second_count;
-second_count = (D1_Tse - D2_Tse) * 24 * 60 * 60 + (H1_Tse - H2_Tse);
+second_count = ((D1_Tse - D2_Tse) * 24 * 60 * 60) - ((H1_Tse - H2_Tse) * 60 * 60);
 if (second_count < 0) {
     second_count = -second_count;
 }

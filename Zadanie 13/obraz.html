@@ -6,9 +6,10 @@ var liczba1_T=parseFloat(prompt("liczba1_T=",""));
 var liczba2_T=parseFloat(prompt("liczba2_T=",""));
 
 document.write("liczba1="+liczba1_T+" | liczba2="+liczba2_T + "<br>");
-document.write("("+liczba1_T+" + "+liczba2_T+" )"+"^3="+(Math.pow(liczba1_T, 3))+" + "+ 3*(Math.pow(liczba2_T, 2))*liczba1_T +" + ");
-document.write(3*liczba1_T*(Math.pow(liczba2_T, 2)) +" + "+ (Math.pow(liczba2_T, 3)));                                            
-
+document.write("("+liczba1_T+" + "+liczba2_T+" )"+"^3=");
+document.write(liczba1_T+"^3"+ " + " + "3*((" + liczba1_T + ")^2)*(" + liczba2_T +") + ");
+document.write("3*(" + liczba1_T +")*((" + liczba2_T + ")^2) + " + liczba2_T +"^3 = " + Math.pow(liczba1_T, 3) + " + "+ 3*( Math.pow(liczba1_T, 2) )*(liczba2_T) + " + " + 3*(liczba1_T)*(Math.pow(liczba2_T, 2)) + " + " + Math.pow(liczba2_T, 3) +" = " + ((Math.pow(liczba1_T, 3)) + (3*( Math.pow(liczba1_T, 2) )*(liczba2_T)) + (3*(liczba1_T)*(Math.pow(liczba2_T, 2))) + (Math.pow(liczba2_T, 3))));                                            
+ 	
 </script>
 </div>
 </body>
