@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Użycie pętli for do rysowania w trybie tekstowym. </title>
+<script language="JavaScript">
+var a_Tse = (6 % 4) + 5;
+var b_Tse = (5 % 6) + 20;
+for(var k = 0; k < a_Tse; k++){
+for(var i = 0; i < b_Tse; i++){ 
+    if(k == 0 || k == a_Tse - 1){
+    document.write("*");
+    continue;    
+    }
+    if(i == 0 && i == b_Tse - 1){
+        document.write("*");
+        continue;  
+    }
+}
+document.write("<br>");
+}
+</script>
+</head>
+<body>
+</body>
+</html>
