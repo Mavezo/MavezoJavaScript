@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 76</title>
+    <script language="JavaScript">
+        for(var i = 31; i < 46; i++){
+            document.write("i=" + i + "\t&nbsp&nbsp" + "pierw_2(" + i + ")=" + (Math.sqrt(i)).toFixed(2) + "\t&nbsp&nbsp" + "pierw_4(" + i + ")=" + (Math.sqrt(Math.sqrt(i))).toFixed(2) +"<br>");
+            if(i % 3 == 0){
+                document.write("----------------------------- <br>");
+                var temp = prompt("Wpisz coś", "");
+                document.clear();
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
