@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        document.write("Zadanie 1: <br>");
+        var R_Tse = parseFloat(prompt("Wpisz R", ""));
+        var count_Tse = 0;
+        var bool_Tse = false;
+        for(var i_Tse = parseInt(-1 - R_Tse); i_Tse <= parseInt(R_Tse + 1); i_Tse++){
+            for(var j_Tse = parseInt(-1 - R_Tse); j_Tse <= parseInt(R_Tse + 1); j_Tse++){
+                if (Math.sqrt((i_Tse * i_Tse) + (j_Tse * j_Tse)) <= R_Tse)
+                    count_Tse++;
+                }
+            }
+        document.write("N(R) = "+count_Tse);
+        document.write("<br>Zadanie 2: <br>");
+        var x_MAX = parseFloat(prompt("Wpisz x_MAX", ""));
+        var x_MIN = parseFloat(prompt("Wpisz x_MIN", ""));
+        var y_MAX = parseFloat(prompt("Wpisz y_MAX", ""));
+        var y_MIN = parseFloat(prompt("Wpisz y_MIN", ""));
+        
+        if(x_MAX < x_MIN){
+            var temp = x_MAX;
+            x_MAX = x_MIN;
+            x_MIN = temp;
+        }
+        if(y_MAX < y_MIN){
+            var temp = y_MAX;
+            y_MAX = y_MIN;
+            y_MIN = temp;
+        }
+
+        var x = x_MIN;
+        var y = y_MIN;
+        var d_max = Math.sqrt((x_MIN * x_MIN) + (y_MIN * y_MIN));
+        for(var i_Tse = x_MIN; i_Tse <= x_MAX; i_Tse++){
+            for(var j_Tse = y_MIN; j_Tse <= y_MAX; j_Tse++){
+                document.write("("+i_Tse+","+j_Tse+") ");
+                if(d_max < Math.sqrt((i_Tse * i_Tse) + (j_Tse * j_Tse))){
+                    d_max = Math.sqrt((i_Tse * i_Tse) + (j_Tse * j_Tse));
+                    x = i_Tse;
+                    y = j_Tse;
+                }
+            }
+            document.write("<br>");
+        }
+        document.write("<br> Punkt ("+x+","+y+") d="+d_max);
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -13,13 +13,17 @@
         }
         else if(t1 < t2){
         for(var i = t1; i <= t2; i++){
-           document.write("<font color='green'> <font size=30>"+i+"</font></font>" + " ");
+            if(i % 2 == 1)
+                document.write("<p style='color:green;font-size:50px;'>"+i+"</p>");
+        
         }
         }
 
         else if(t1 > t2){
         for(var i = t2; i <= t1; i++){
-           document.write("<font color='blue'> <font size=15>"+i+"</font></font>" + " ");
+            if(i % 2 == 1)
+                document.write("<p style='color:blue;font-size:25px;'>"+i+"</p>");
+
         }
         }
 
